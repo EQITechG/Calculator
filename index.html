@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+body{
+    background-color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin:0;
+    font-weight: bold;
+    text-align: center;
+
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color:#7a007a;
+    margin-top: 5rem;
+
+
+}
+
+
+
+.first{
+  display: inline-block;
+  position: fixed;
+  left: 28%;
+  top: 30%;
+}
+
+.second{
+        display: inline-block;
+    position: fixed;
+    left: 44%;
+    top: 25%;
+}
+.third{
+  
+    display: inline-block;
+    position: fixed;
+    right: 28%;
+    top: 30%;
+
+}
+
+
+
+#num{
+    padding: 10px 20px 10px 20px;
+    border-radius: 28px;
+    border-style: none;
+    width:10rem;
+    height:2rem;
+}
+
+
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border-style: solid;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    background: #7a007a;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+ 
+    display: inline-block;
+    position: fixed;
+    left: 45%;
+    bottom: 40%;
+}
+
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+    
+  }
+    </style>
+</head>
+<body>
+
+
+
+    <div class="cover">
+        <h1>Calculator</h1>
+        <form action="/" method="post">
+        <div class="first">
+            <label for="num1">Enter first number</label><br>
+            <input type="number" name="num1" id="num" placeholder="First Number" >
+        </div>
+
+ <div class="second">
+    <p>Select Operator</p>
+            <div>
+                <label for="add">+</label>
+                <input type="radio" name="operator" id="" value="+" >
+
+            </div>
+            <div>
+                <label for="minus">-</label>
+                <input type="radio" name="operator" id="" value="-" >
+
+            </div>
+            <div>
+                <label for="divide">/</label>
+                <input type="radio" name="operator" id="" value="/" >
+
+            </div>
+            <div>
+                <label for="multiply">*</label>
+                <input type="radio" name="operator" id="" value="*" >
+
+            </div>
+
+        </div>
+
+        <div class="third">
+            <label for="num2">Enter first number</label><br>
+            <input type="number" name="num2" id="num" placeholder="Second Number" >
+        </div>
+        <button class="btn" type="submit">Calculate</button>
+       
+    </form>
+    </div>   
+</body>
+</html>
